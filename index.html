@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mudasar.dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">Mudasar.dev</h2>
+
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Hire Me -->
+  <button class="hire-btn" onclick="scrollToContact()">
+    Hire Me
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>I Build Modern Websites & AI Tools</h1>
+    <p>Freelance Developer | AI Tools | Web Apps</p>
+
+    <div class="buttons">
+      <button class="primary" onclick="location.href='#projects'">View My Work</button>
+      <button class="secondary" onclick="location.href='#contact'">Contact Me</button>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="mudasar.jpeg" alt="profile">
+  </div>
+</section>
+
+<!-- SERVICES = PROJECTS -->
+<section id="projects" class="services">
+  <h2>My Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Modern responsive websites using latest technologies.</p>
+    </div>
+
+    <div class="card">
+      <h3>AI Tools</h3>
+      <p>Custom AI-based tools like proposal generators.</p>
+    </div>
+
+    <div class="card">
+      <h3>UI/UX Design</h3>
+      <p>Clean and user-friendly interface design.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="services">
+  <h2>My Experience</h2>
+  <p style="margin-top:20px;">
+    🧑‍💻 Freelance Web Developer (Entry Level)
+
+I am a passionate Web Developer currently building my skills in modern web technologies and real-world client projects. I am focused on creating clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, and basic backend tools.
+
+Right now, I am gaining practical experience through an internship at Ace Connect, where I am learning how real industry projects are developed, managed, and delivered to clients.
+
+💡 Skills & Technologies
+HTML5, CSS3 (Responsive Design)
+JavaScript (Basic to Intermediate)
+Bootstrap / Tailwind CSS (UI Design)
+Basic PHP / MySQL (if used)
+Git & GitHub (Version Control)
+AI Tools & Automation Basics
+🚀 What I Can Do
+Modern and responsive websites
+Simple business or portfolio websites
+Landing pages for products or services
+Basic automation ideas using web tools
+UI improvements and bug fixing
+  </p>
+</section>
+
+<!-- TOOLS -->
+<section class="tools">
+  <h2>My Tools</h2>
+
+  <div class="cards">
+    <div class="card highlight">
+      <h3>Upwork Proposal Generator</h3>
+      <p>Create high-converting freelance proposals instantly.</p>
+<button onclick="window.location.href='proposal.html'">Try Tool</button>
+    </div>
+
+    <div class="card">
+      <h3>More Tools</h3>
+      <p>Coming soon...</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+    <p>Have a project in mind? Send me a message 👇</p>
+
+    <div class="contact-box">
+
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <input type="text" id="subject" placeholder="Subject">
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button onclick="sendMessage()">Send Message</button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

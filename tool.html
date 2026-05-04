@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proposal Generator</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .tool-container {
+      max-width: 700px;
+      margin: 80px auto;
+      background: #111827;
+      padding: 30px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #22c55e;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .output {
+      margin-top: 20px;
+      background: #020617;
+      padding: 15px;
+      border-radius: 8px;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tool-container">
+  <h2>Upwork Proposal Generator</h2>
+
+  <input type="text" id="clientName" placeholder="Client Name">
+  <input type="text" id="jobTitle" placeholder="Job Title">
+  <textarea id="jobDesc" placeholder="Job Description"></textarea>
+  <input type="text" id="skills" placeholder="Your Skills (e.g. React, AI, Web Dev)">
+
+  <button onclick="generateProposal()">Generate Proposal</button>
+
+  <div class="output" id="output"></div>
+</div>
+
+<script src="tool.js"></script>
+
+</body>
+</html>
